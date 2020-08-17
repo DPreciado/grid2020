@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3>columnas del mismo ancho</h3>
+        <div class="row">
+            <div class="col" style="background-color: burlywood;">
+                <p>columna 1</p>
+            </div>
+            <div class="col" style="background-color: cadetblue;">
+                <p>columna 2</p>
+            </div>
+            <div class="col" style="background-color: greenyellow;">
+                <p>columna 3</p>
+            </div>
+        </div>
+        <h3>columnas del mismo ancho, con breakepoints</h3>
+        <div class="row">
+            <div class="col">
+                <p>columna 1</p>
+            </div>
+            <div class="col">
+                <p>columna 2</p>
+            </div>
+            <div class="col-md">
+                <p>columna 3</p>
+            </div>
+        </div>
+        <!-- salto de fila  -->
+        <h3>columnas con salto de linea</h3>
+        <div class="row">
+            <div class="col">
+                columna 1
+            </div>
+            <div class="col">
+                columna 2
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                columna 3
+            </div>
+            <div class="col">
+                columna 4
+            </div>
+            <div class="col">
+                columna 5
+            </div>
+        </div>
+        <h3>columnas de ancho definido</h3>
+        <div class="row">
+            <div class="col-9" style="background-color: greenyellow;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-3" style="background-color: indianred;">
+                <p>columna 2</p>
+            </div>
+            <div class="col-8" style="background-color: khaki">
+                <p>columna 3</p>
+            </div>
+        </div>
+        <h3>columnas de ancho definido con breakepints</h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12" style="background-color: greenyellow;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-8" style="background-color: indianred;">
+                <p>columna 2</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-4" style="background-color: khaki">
+                <p>columna 3</p>
+            </div>
+        </div>
+        <h3>columnas de ancho variable</h3>
+        <div class="row">
+            <div class="col-md-2" style="background-color:mediumturquoise">
+                <p>columna 1</p>
+            </div>
+            <div class="col-md-auto" style="background-color:mediumspringgreen">
+                <p>agregando texto para alargar el contenedor este lo mas posibleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+            </div>
+            <div class="col-md-2" style="background-color: mediumslateblue;">
+                <p>columna 3</p>
+            </div>
+        </div>
+        <h3>filas con columnas definidas</h3>
+        <div class="row row-cols-3">
+            <div class="col" style="background-color: olivedrab;">
+                <p>columna 1</p>
+            </div>
+            <div class="col" style="background-color: paleturquoise;">
+                <p>columna 2</p>
+            </div>
+            <div class="col" style="background-color: pink;">
+                <p>columna 3</p>
+            </div>
+            <div class="col" style="background-color:tomato;">
+                <p>columna 4</p>
+            </div>
+        </div>
+        <h3>alieacion horizontal</h3>
+        <h4>start</h4>
+        <div class="row justify-content-start">
+            <div class="col-4" style="background-color: violet;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-4" style="background-color:yellowgreen;">
+                <p>columna 2</p>
+            </div>
+        </div>
+        <h4>center</h4>
+        <div class="row justify-content-center">
+            <div class="col-4" style="background-color: violet;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-4" style="background-color:yellowgreen;">
+                <p>columna 2</p>
+            </div>
+        </div>
+        <h4>end</h4>
+        <div class="row justify-content-end">
+            <div class="col-4" style="background-color: violet;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-4" style="background-color:yellowgreen;">
+                <p>columna 2</p>
+            </div>
+        </div>
+        <h4>around</h4>
+        <div class="row justify-content-around">
+            <div class="col-4" style="background-color: violet;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-4" style="background-color:yellowgreen;">
+                <p>columna 2</p>
+            </div>
+        </div>
+        <h4>between</h4>
+        <div class="row justify-content-between">
+            <div class="col-4" style="background-color: violet;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-4" style="background-color:yellowgreen;">
+                <p>columna 2</p>
+            </div>
+        </div>
+        <h3>orden</h3>
+        <div class="row">
+            <div class="col">
+                <p>primera columna</p>
+            </div>
+            <div class="col order-11">
+                <p>segunda columna</p>
+            </div>
+            <div class="col order-2">
+                <p>tercera columna</p>
+            </div>
+        </div>
+        <h3>offset</h3>
+        <div class="row">
+            <div class="col-md-4" style="background-color: darksalmon;">
+                <p>columna 1</p>
+            </div>
+            <div class="col-md-3 offset-5" style="background-color: darkseagreen;">
+                <p>columna 2</p>
+            </div>
+        </div>
+        <h3>nesting</h3>
+        <div class="row">
+            <div class="col">
+                <p>columna 1</p>
+                <div class="row">
+                    <div class="col">
+                        <p>columna a</p>
+                    </div>
+                    <div class="col">
+                        <p>columna b</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <p>columna c</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <p>columna 2</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery primero, luego el popper, despues el bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
